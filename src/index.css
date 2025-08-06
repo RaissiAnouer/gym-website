@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@100..700&display=swap');
+
+@import "tailwindcss";
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+a.active p {
+  font-weight: 600;
+}
+
+@media (max-width:640px) {
+  a.active {
+    background-color: rgb(238, 242, 242);
+    color: black;
+  }
+
+}
+
+@layer utilities {
+  @keyframes infinite-scroll {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .animate-infinite-scroll {
+    animation: infinite-scroll 25s linear infinite;
+  }
+}
