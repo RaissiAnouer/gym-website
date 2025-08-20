@@ -1,5 +1,4 @@
-import squat from './squat.png'
-import running from './running.png'
+
 import background from './background.png'
 import flexing from './flexing.png'
 import arrow from './arrow.png'
@@ -28,8 +27,7 @@ export const assets = {
     ahmed,
     amira,
     asma,
-    running,
-    squat,
+
     pushup,
     flexing,
     arrow,
