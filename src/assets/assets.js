@@ -19,8 +19,8 @@ import image4 from './image4.jpg'
 import amine from './amine.jpg'
 import ahmed from './ahmed.jpg'
 import amira from './amira.jpg'
-import asma from './asma.jpg'
-import pushup from './push.jpg'
+import asma from './asma.jpg' 
+import pushup from './push.jpg' 
 //
 
 export const assets = {
