@@ -17,3 +17,6 @@ jobs:
 
       - name: build docker image
         run: docker build -t gym-website:latest .
+
+      - name: confirmation
+        run: "echo image built successfully"
