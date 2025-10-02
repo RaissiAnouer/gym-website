@@ -12,6 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         # - run: docker build -t gym-website:latest .
-        run: ls -la
         with:
           token: ${{secrets.GITHUB_TOKEN}}
+
+      - run: ls -la
