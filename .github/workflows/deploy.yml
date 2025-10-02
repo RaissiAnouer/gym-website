@@ -1,4 +1,4 @@
-name: Anouer workflow
+name: gym's workflow
 
 on:
   push:
@@ -11,12 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
         with:
-          token: ${{secrets.GITHUB_TOKEN}}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: build docker image
-        run: docker build -t gym-website:latest .
-
-      - name: confirmation
-        run: "echo image built successfully"
+        run: docker build -t gym_website:latest .
+        #
