@@ -11,8 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-        # - run: docker build -t gym-website:latest .
         with:
           token: ${{secrets.GITHUB_TOKEN}}
 
-      - run: ls -la
+      - run: docker build -t gym-website:latest .
