@@ -5,7 +5,6 @@ import Guides from "./pages/Guides";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import { assets } from "./assets/assets";
-import InfityScroller from "./components/InfityScroller";
 
 const App = () => {
   const text1 =
