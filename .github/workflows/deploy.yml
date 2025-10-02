@@ -20,4 +20,4 @@ jobs:
     # needs: checkout
     steps:
       # - run: docker build -t gym-website:latest .
-      - run: pwd
+      - run: ls -la
