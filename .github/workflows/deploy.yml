@@ -3,6 +3,7 @@ name: Anouer workflow
 on:
   push:
     branches:
+      - main
       - "releases/**"
 
 jobs:
