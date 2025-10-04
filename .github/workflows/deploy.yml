@@ -10,8 +10,12 @@ jobs:
   build_docker_image:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v5
+    - uses: actions/checkout@v5
+      name: Check out code
 
-      - name: build docker image
-        run: docker build -t gym_website:latest .
+      uses: mr-smithers-excellent/docker-build-push@v6
+      with:
+        image: raissianouer/gym-website
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
