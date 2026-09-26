@@ -7,7 +7,14 @@ on:
 jobs:
   setupNode:
     runs-on: ubuntu-latest
+    env:
+      NODE_ENV: test
+      LOG_LEVEL: debug
     steps:
+      - name: print env:
+        run: |
+          echo "Environment: ${{env.NODE_ENV}}
+          echo "Log level: ${{env.LOG_LEVEL}}
       - name: checkout
         uses: actions/checkout@v6.1.0
       
