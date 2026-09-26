@@ -11,7 +11,7 @@ jobs:
       NODE_ENV: test
       LOG_LEVEL: debug
     steps:
-      - name: print env:
+      - name: print env
         run: |
           echo "Environment: ${{env.NODE_ENV}}
           echo "Log level: ${{env.LOG_LEVEL}}
