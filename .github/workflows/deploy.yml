@@ -1,10 +1,7 @@
 name: workflow
 
 on:
-  push:
-    branches:
-      - main
-      - "releases/**"
+  workflow_dispatch: 
 
 jobs:
   build_deploy:
