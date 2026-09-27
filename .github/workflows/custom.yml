@@ -8,6 +8,7 @@ jobs:
     env:
       NODE_ENV: test
       LOG_LEVEL: debug
+      TEST_SECRET: secrets.TEST_SECRET
     steps:
       - name: checkout
         uses: actions/checkout@v6.1.0
@@ -16,7 +17,7 @@ jobs:
         run: |
           echo "Environment: ${{env.NODE_ENV}}"
           echo "Log level: ${{env.LOG_LEVEL}}"
-          echo "Secret: ${#{{secrets.TEST_SECRET}}}"
+          echo "Secret: ${#TEST_SECRET}"
       
       
       - name: install Node.js 22
