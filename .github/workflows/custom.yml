@@ -9,20 +9,24 @@ jobs:
       NODE_ENV: test
       LOG_LEVEL: debug
     steps:
-      - name: print env
-        run: |
-          echo "Environment: ${{env.NODE_ENV}}
-          echo "Log level: ${{env.LOG_LEVEL}}
       - name: checkout
         uses: actions/checkout@v6.1.0
+      - name: print env
+        run: |
+          echo "Environment: ${{env.NODE_ENV}}"
+          echo "Log level: ${{env.LOG_LEVEL}}"
+      
       
       - name: install Node.js 22
         uses: actions/setup-node@v6.5.0
         with:
           node-version: 22
+          cache: 'npm'
 
       - name: run npm install 
         run: npm install
+      
+        
 
       
        
