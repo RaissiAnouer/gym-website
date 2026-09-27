@@ -11,10 +11,12 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v6.1.0
+        
       - name: print env
         run: |
           echo "Environment: ${{env.NODE_ENV}}"
           echo "Log level: ${{env.LOG_LEVEL}}"
+          echo "Secret: ${{secrets.TEST_SECRETS}}"
       
       
       - name: install Node.js 22
