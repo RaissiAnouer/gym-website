@@ -16,7 +16,7 @@ jobs:
         run: |
           echo "Environment: ${{env.NODE_ENV}}"
           echo "Log level: ${{env.LOG_LEVEL}}"
-          echo "Secret: ${{secrets.TEST_SECRET}}"
+          echo "Secret: ${#{{secrets.TEST_SECRET}}}"
       
       
       - name: install Node.js 22
